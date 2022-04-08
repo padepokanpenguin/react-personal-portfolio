@@ -34,9 +34,6 @@ const PASSION_DATA = [
 ];
 
 const Passion = () => {
-  // const passionItems = passionData.map((passion) => return <Card id={passion.id} image={passion.imgData} title={passion.title} description={passion.description} />
-  // );
-
   return (
     <section>
       <div className="text-center">
@@ -52,6 +49,7 @@ const Passion = () => {
             title={passion.title}
             image={passion.imgData}
             description={passion.description}
+            variant='passion'
           />
         ))}
       </div>

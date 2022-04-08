@@ -1,5 +1,6 @@
 import Logo from "./components/Logo";
 import Passion from "./components/Passion";
+import Portfolio from "./components/Portfolio";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <Logo />
     <Welcome/>
     <Passion />
+    <Portfolio />
   </div>;
 }
 
