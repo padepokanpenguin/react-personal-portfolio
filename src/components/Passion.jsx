@@ -41,7 +41,7 @@ const Passion = () => {
           My <span className="font-bold">Passion</span>
         </h2>
       </div>
-      <div className="flex gap-5 flex- flex-wrap justify-center my-20">
+      <div className="flex gap-14 flex-wrap justify-center my-20">
         {PASSION_DATA.map((passion) => (
           <Card
             key={passion.id}
