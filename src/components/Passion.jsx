@@ -1,42 +1,42 @@
 import Card from "./Card";
 
-const passionData = [
+const PASSION_DATA = [
   {
     id: "p1",
     title: "Front-end",
-    imgData: "../assets/frontend.png",
+    imgData: "asset/frontend.png",
     description: "(Bootsrap, Tailwind)",
   },
   {
     id: "p2",
     title: "Back-end",
-    imgData: "../assets/backend.png",
+    imgData: "asset/backend.png",
     description: "(Nodejs, Firebase)",
   },
   {
     id: "p3",
     title: "Operating System",
-    imgData: "../assets/operatingsystem.png",
+    imgData: "asset/operatingsytem.png",
     description: "(Linux)",
   },
   {
     id: "p4",
     title: "UI/UX Design",
-    imgData: "../assets/UIUXdesign.png",
+    imgData: "asset/UIUXdesign.png",
     description: "(Figma)",
   },
   {
     id: "p5",
     title: "Finance",
-    imgData: "../assets/finance.png",
+    imgData: "asset/finance.png",
     description: "(Sharia Economy)",
   },
 ];
 
-
-
-
 const Passion = () => {
+  // const passionItems = passionData.map((passion) => return <Card id={passion.id} image={passion.imgData} title={passion.title} description={passion.description} />
+  // );
+
   return (
     <section>
       <div className="text-center">
@@ -44,7 +44,17 @@ const Passion = () => {
           My <span className="font-bold">Passion</span>
         </h2>
       </div>
-      <Card id={passionData[0].id} image={passionData[0].imgData} title={passionData[0].title} description={passionData[0].description}  />
+      <div className="flex gap-5 flex- flex-wrap justify-center my-20">
+        {PASSION_DATA.map((passion) => (
+          <Card
+            key={passion.id}
+            id={passion.id}
+            title={passion.title}
+            image={passion.imgData}
+            description={passion.description}
+          />
+        ))}
+      </div>
     </section>
   );
 };
