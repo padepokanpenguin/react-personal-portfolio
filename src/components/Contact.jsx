@@ -1,4 +1,5 @@
 import ContactItem from "./ContactItem";
+import Layout from "./Layout/Layout";
 
 const CONTACT_IMAGE = [
   {
@@ -21,18 +22,20 @@ const CONTACT_IMAGE = [
 
 const Contact = () => {
   return (
-    <section>
-      <div className="text-center">
-        <h2 className="text-logo text-xl sm:text-2xl">
-          My <span className="font-bold">Contact</span>
-        </h2>
-      </div>
-      <div className="flex gap-5 flex-col flex-wrap justify-center my-20 lg:flex-row">
-        {CONTACT_IMAGE.map((img) => (
-          <ContactItem src={img.imgUrl} key={img.id} />
-        ))}
-      </div>
-    </section>
+    <Layout>
+      <section>
+        <div className="text-center">
+          <h2 className="text-logo text-xl sm:text-2xl">
+            My <span className="font-bold">Contact</span>
+          </h2>
+        </div>
+        <div className="flex gap-5 flex-col flex-wrap justify-center my-20 lg:flex-row">
+          {CONTACT_IMAGE.map((img) => (
+            <ContactItem src={img.imgUrl} key={img.id} />
+          ))}
+        </div>
+      </section>
+    </Layout>
   );
 };
 

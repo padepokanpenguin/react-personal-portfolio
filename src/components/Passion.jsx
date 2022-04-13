@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Layout from "./Layout/Layout";
 
 const PASSION_DATA = [
   {
@@ -35,7 +36,7 @@ const PASSION_DATA = [
 
 const Passion = () => {
   return (
-    <section>
+    <Layout>
       <div className="text-center">
         <h2 className="text-logo text-xl sm:text-2xl">
           My <span className="font-bold">Passion</span>
@@ -53,7 +54,7 @@ const Passion = () => {
           />
         ))}
       </div>
-    </section>
+    </Layout>
   );
 };
 
