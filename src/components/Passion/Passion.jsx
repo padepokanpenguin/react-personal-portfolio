@@ -1,5 +1,5 @@
-import Card from "./Card";
-import Layout from "./Layout/Layout";
+import Card from "../Layout/Card/Card";
+import Layout from "../Layout/Layout";
 
 const PASSION_DATA = [
   {

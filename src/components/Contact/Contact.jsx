@@ -1,5 +1,5 @@
 import ContactItem from "./ContactItem";
-import Layout from "./Layout/Layout";
+import Layout from "../Layout/Layout";
 
 const CONTACT_IMAGE = [
   {
