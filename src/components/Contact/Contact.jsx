@@ -5,18 +5,22 @@ const CONTACT_IMAGE = [
   {
     id: "im1",
     imgUrl: "asset/contact/linkedin.png",
+    urlLink: "https://www.linkedin.com/in/aria-nur-jamal-ba5856231/",
   },
   {
     id: "im2",
     imgUrl: "asset/contact/fast-message.png",
+    urlLink: "mailto:jamal.psw@gmail.com",
   },
   {
     id: "im3",
     imgUrl: "asset/contact/github.png",
+    urlLink: "https://github.com/padepokanpenguin",
   },
   {
     id: "im4",
     imgUrl: "asset/contact/instagram.png",
+    urlLink: "https://www.instagram.com/",
   },
 ];
 
@@ -31,7 +35,12 @@ const Contact = () => {
         </div>
         <div className="flex gap-5 flex-col flex-wrap justify-center my-20 lg:flex-row">
           {CONTACT_IMAGE.map((img) => (
-            <ContactItem src={img.imgUrl} key={img.id} />
+            <ContactItem
+              src={img.imgUrl}
+              key={img.id}
+              id={img.id}
+              urlLink={img.urlLink}
+            />
           ))}
         </div>
       </section>

@@ -13,6 +13,9 @@ module.exports = {
       backgroundImage: {
         contact: "url('/public/asset/contact/vector.png')",
       },
+      screens: {
+        'wide': { 'raw': '(min-width: 1537px)' },
+      }
     },
   },
   plugins: [],
